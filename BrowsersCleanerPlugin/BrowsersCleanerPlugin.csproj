@@ -50,12 +50,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Lang.resx</DependentUpon>
     </Compile>
+    <Compile Include="Lang.pl.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lang.pl.resx</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RunningPrograms.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Lang.pl.resx" />
+    <EmbeddedResource Include="Lang.pl.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lang.pl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lang.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Lang.Designer.cs</LastGenOutput>
