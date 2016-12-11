@@ -40,10 +40,7 @@ namespace BrowsersCleanerPlugin
                     }
                 }
             }
-            if (DoClean)
-                return "Firefox, " + Lang.Cache + ": " + Size + " MB" + "\n\n";
-            else
-                return "Firefox, " + Lang.Cache + ": " + Size + " MB" + "\n\n";
+            return "Firefox, " + Lang.Cache + ": " + Size + " MB" + "\n\n";
         }
 
         public static string CleanFirefoxHistory(bool DoClean)
@@ -55,10 +52,7 @@ namespace BrowsersCleanerPlugin
                 string[] array = { Path + "\\places.sqlite", Path + "\\formhistory.sqlite" };
                 Size += DeleteFiles(array, DoClean);
             }
-            if (DoClean)
-                return "Firefox, " + Lang.History + ": " + Size + " MB" + "\n\n";
-            else
-                return "Firefox, " + Lang.History + ": " + Size + " MB" + "\n\n";
+            return "Firefox, " + Lang.History + ": " + Size + " MB" + "\n\n";
         }
 
         public static string CleanFirefoxDownload(bool DoClean)
@@ -70,10 +64,7 @@ namespace BrowsersCleanerPlugin
                 string[] array = { Path + "\\mimeTypes.rdf" };
                 Size += DeleteFiles(array, DoClean);
             }
-            if (DoClean)
-                return "Firefox, " + Lang.Download + ": " + Size + " MB" + "\n\n";
-            else
-                return "Firefox, " + Lang.Download + ": " + Size + " MB" + "\n\n";
+            return "Firefox, " + Lang.Download + ": " + Size + " MB" + "\n\n";
         }
 
         public static string CleanFirefoxCookies(bool DoClean)
@@ -85,10 +76,7 @@ namespace BrowsersCleanerPlugin
                 string[] array = { Path + "\\cookies.sqlite" };
                 Size += DeleteFiles(array, DoClean);
             }
-            if (DoClean)
-                return "Firefox, " + Lang.Cookies + ": " + Size + " MB" + "\n\n";
-            else
-                return "Firefox, " + Lang.Cookies + ": " + Size + " MB" + "\n\n";
+            return "Firefox, " + Lang.Cookies + ": " + Size + " MB" + "\n\n";
         }
 
         public static string CleanFirefoxPasswords(bool DoClean)
@@ -100,10 +88,7 @@ namespace BrowsersCleanerPlugin
                 string[] array = { Path + "\\key3.db", Path + "\\signons.sqlite" };
                 Size += DeleteFiles(array, DoClean);
             }
-            if (DoClean)
-                return "Firefox, " + Lang.Passwords + ": " + Size + " MB" + "\n\n";
-            else
-                return "Firefox, " + Lang.Passwords + ": " + Size + " MB" + "\n\n";
+            return "Firefox, " + Lang.Passwords + ": " + Size + " MB" + "\n\n";
         }
 
         public static string CleanFirefoxSitesSettings(bool DoClean)
@@ -115,10 +100,7 @@ namespace BrowsersCleanerPlugin
                 string[] array = { Path + "\\permissions.sqlite" };
                 Size += DeleteFiles(array, DoClean);
             }
-            if (DoClean)
-                return "Firefox, " + Lang.SitesSettings + ": " + Size + " MB" + "\n\n";
-            else
-                return "Firefox, " + Lang.SitesSettings + ": " + Size + " MB" + "\n\n";
+            return "Firefox, " + Lang.SitesSettings + ": " + Size + " MB" + "\n\n";
         }
 
         /* chrome */
@@ -143,10 +125,7 @@ namespace BrowsersCleanerPlugin
                     }
                 }
             }
-            if (DoClean)
-                return "Chrome, " + Lang.Cache + ": " + Size + " MB" + "\n\n";
-            else
-                return "Chrome, " + Lang.Cache + ": " + Size + " MB" + "\n\n";
+            return "Chrome, " + Lang.Cache + ": " + Size + " MB" + "\n\n";
         }
         public static string CleanChromeHistory(bool DoClean)
         {
@@ -156,10 +135,7 @@ namespace BrowsersCleanerPlugin
             string[] array = { Path + "Visited Links", Path + "Current Tabs", Path + "Top Sites", Path + "History Provider Cache", Path + "Network Action Predictor", Path + "History" };
             Size += DeleteFiles(array, DoClean);
 
-            if (DoClean)
-                return "Chrome, " + Lang.History + ": " + Size + " MB" + "\n\n";
-            else
-                return "Chrome, " + Lang.History + ": " + Size + " MB" + "\n\n";
+            return "Chrome, " + Lang.History + ": " + Size + " MB" + "\n\n";
         }
         public static string CleanChromeCookies(bool DoClean)
         {
@@ -176,10 +152,7 @@ namespace BrowsersCleanerPlugin
                 string[] array = { Path + "Cookies" };
                 Size += DeleteFiles(array, DoClean);
             }
-            if (DoClean)
-                return "Chrome, " + Lang.Cookies + ": " + Size + " MB" + "\n\n";
-            else
-                return "Chrome, " + Lang.Cookies + ": " + Size + " MB" + "\n\n";
+            return "Chrome, " + Lang.Cookies + ": " + Size + " MB" + "\n\n";
         }
         public static string CleanChromeSession(bool DoClean)
         {
@@ -189,10 +162,7 @@ namespace BrowsersCleanerPlugin
             string[] array = { Path + "Last Session", Path + "Current Session" };
             Size += DeleteFiles(array, DoClean);
 
-            if (DoClean)
-                return "Chrome, " + Lang.Session + ": " + Size + " MB" + "\n\n";
-            else
-                return "Chrome, " + Lang.Session + ": " + Size + " MB" + "\n\n";
+            return "Chrome, " + Lang.Session + ": " + Size + " MB" + "\n\n";
         }
         public static string CleanChromePasswords(bool DoClean)
         {
@@ -202,10 +172,7 @@ namespace BrowsersCleanerPlugin
             string[] array = { Path + "Login Data" };
             Size += DeleteFiles(array, DoClean);
 
-            if (DoClean)
-                return "Chrome, " + Lang.Passwords + ": " + Size + " MB" + "\n\n";
-            else
-                return "Chrome, " + Lang.Passwords + ": " + Size + " MB" + "\n\n";
+            return "Chrome, " + Lang.Passwords + ": " + Size + " MB" + "\n\n";
         }
         /* opera */
         public static string CleanOperaCache(bool DoClean)
@@ -229,10 +196,7 @@ namespace BrowsersCleanerPlugin
                     }
                 }
             }
-            if (DoClean)
-                return "Opera, " + Lang.Cache + ": " + Size + " MB" + "\n\n";
-            else
-                return "Opera, " + Lang.Cache + ": " + Size + " MB" + "\n\n";
+            return "Opera, " + Lang.Cache + ": " + Size + " MB" + "\n\n";
         }
         public static string CleanOperaHistory(bool DoClean)
         {
@@ -242,10 +206,7 @@ namespace BrowsersCleanerPlugin
             string[] array = { Path + "Visited Links", Path + "Current Tabs", Path + "Top Sites", Path + "History Provider Cache", Path + "Network Action Predictor", Path + "History" };
             Size += DeleteFiles(array, DoClean);
 
-            if (DoClean)
-                return "Opera, " + Lang.History + ": " + Size + " MB" + "\n\n";
-            else
-                return "Opera, " + Lang.History + ": " + Size + " MB" + "\n\n";
+            return "Opera, " + Lang.History + ": " + Size + " MB" + "\n\n";
         }
         public static string CleanOperaCookies(bool DoClean)
         {
@@ -256,10 +217,7 @@ namespace BrowsersCleanerPlugin
                 string[] array = { path + "Cookies", path + "Cookies-journal"};
                 Size += DeleteFiles(array, DoClean);
             }
-            if (DoClean)
-                return "Opera, " + Lang.Cookies + ": " + Size + " MB" + "\n\n";
-            else
-                return "Opera, " + Lang.Cookies + ": " + Size + " MB" + "\n\n";
+            return "Opera, " + Lang.Cookies + ": " + Size + " MB" + "\n\n";
         }
         public static string CleanOperaSession(bool DoClean)
         {
@@ -269,10 +227,7 @@ namespace BrowsersCleanerPlugin
             string[] array = { Path + "Last Session", Path + "Current Session" };
             Size += DeleteFiles(array, DoClean);
 
-            if (DoClean)
-                return "Opera, " + Lang.Session + ": " + Size + " MB" + "\n\n";
-            else
-                return "Opera, " + Lang.Session + ": " + Size + " MB" + "\n\n";
+            return "Opera, " + Lang.Session + ": " + Size + " MB" + "\n\n";
         }
         public static string CleanOperaPasswords(bool DoClean)
         {
@@ -282,10 +237,7 @@ namespace BrowsersCleanerPlugin
             string[] array = { Path + "Login Data" };
             Size += DeleteFiles(array, DoClean);
 
-            if (DoClean)
-                return "Opera, " + Lang.Passwords + ": " + Size + " MB" + "\n\n";
-            else
-                return "Opera, " + Lang.Passwords + ": " + Size + " MB" + "\n\n";
+            return "Opera, " + Lang.Passwords + ": " + Size + " MB" + "\n\n";
         }
         ////////////
         private static double DeleteFiles(string[] PathToFiles, bool DoDelete)
