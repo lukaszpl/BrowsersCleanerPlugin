@@ -85,6 +85,7 @@ namespace BrowsersCleanerPlugin
             //add object for execute code in PluginMethod, pose IndexToExecute
             CheckBox hidden = new CheckBox();
             hidden.IsChecked = true;
+            hidden.Name = "Hidden";
             hidden.Visibility = Visibility.Collapsed;
             objList.Add(hidden);
             return objList;
@@ -135,7 +136,7 @@ namespace BrowsersCleanerPlugin
                 if (obj == OperaPasswords_checkBox)
                     IndexToExecute = 16;
             }));
-
+        
             if ((((RunningPrograms.GetIsItRunningProcess("firefox")) && (!FirefoxIsRunning)) && (DoClean)) && ((IndexToExecute == 1) || (IndexToExecute == 2) || (IndexToExecute == 3) || (IndexToExecute == 4) || (IndexToExecute == 5) || (IndexToExecute == 6)))
             {
                 GuiThr.Invoke(new Action(() =>
