@@ -78,6 +78,12 @@
   <ItemGroup>
     <Resource Include="Resources\opera.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PluginTemplate\PluginTemplate.csproj">
+      <Project>{85F7C88D-5D50-4DBE-9B44-419ECB5F3B49}</Project>
+      <Name>PluginTemplate</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

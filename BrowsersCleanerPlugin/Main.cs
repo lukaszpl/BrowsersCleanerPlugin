@@ -12,6 +12,7 @@
     You should have received a copy of the GNU General Public License
     along with BrowsersCleanerPlugin for Cleaner .NET; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA */
+using PluginTemplate;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -24,7 +25,7 @@ using System.Windows.Threading;
 
 namespace BrowsersCleanerPlugin
 {
-    public class Main
+    public class Main : IPlugin
     {
         #region informations
         public int CleanerNetVersion { get { return 1; } }
@@ -285,6 +286,5 @@ namespace BrowsersCleanerPlugin
 
             return null;
         }
-    }
-
+    } 
 }
